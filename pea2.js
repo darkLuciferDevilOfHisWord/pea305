@@ -7,7 +7,7 @@ function fun1_1(){
     img1_1.map((img)=>{
         mainBox.innerHTML += `
         <hr>
-        <img src="${img}.jpg" alt="" class="img-fluid">
+        <img src="${img}.JPG" alt="" class="img-fluid">
         `;
     })
     mainBox.innerHTML += `<hr>`;
@@ -192,7 +192,7 @@ function fun6_1(){
     img6_1.map((img)=>{
         mainBox.innerHTML += `
         <hr>
-        <img src="${img}.JPG" alt="" class="img-fluid">
+        <img src="6${img}.JPG" alt="" class="img-fluid">
         `;
     })
     mainBox.innerHTML += `<hr>`;
