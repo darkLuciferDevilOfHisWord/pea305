@@ -185,14 +185,14 @@ function fun5_3(){
 
 
 
-let img6_1 = ["1","2","3","4","5","6","7","8"];
+let img6_1 = ["a","b","c","d","e","f","g","h"];
 
 function fun6_1(){
     mainBox.innerHTML = "";
     img6_1.map((img)=>{
         mainBox.innerHTML += `
         <hr>
-        <img src="6${img}.JPG" alt="" class="img-fluid">
+        <img src="${img}.JPG" alt="" class="img-fluid">
         `;
     })
     mainBox.innerHTML += `<hr>`;
