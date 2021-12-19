@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+</head>
+
+<body style="background-color: black; color:white">
+    <div class="container">
+
+        <div class="d-flex my-1 justify-content-around position-fixed start-0 w-100">
+            <a class="w-100 mx-2" href="#boxCalculator"><button type="button" class="btn btn-dark w-100" id="calculator" style="text-decoration: none;">Calculator</button></a>
+        </div>
+
+        <div class="d-flex my-5 justify-content-around position-fixed start-0 w-100">
+
+            <div class="">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        1
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" onclick="fun1_1()">Number System </a></li>
+                        <li><a class="dropdown-item" onclick="fun1_2()">AP GP</a></li>
+                        <li><a class="dropdown-item" onclick="fun1_3()">Average</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><div class="dropdown-item" >Chapter 1</div></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        2
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" onclick="fun2_1()">Percentage</a></li>
+                        <li><a class="dropdown-item" onclick="fun2_2()">Profit and Lose</a></li>
+                        <li><a class="dropdown-item" onclick="fun2_3()">Intrest</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><div class="dropdown-item" >Chapter 2</div></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        3
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" onclick="fun3_1()">Logical Reasoning</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><div class="dropdown-item" >Chapter 3</div></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        4
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" onclick="fun4_1()">Ratio</a></li>
+                        <li><a class="dropdown-item" onclick="fun4_2()">Ages</a></li>
+                        <li><a class="dropdown-item" onclick="fun4_3()">Mixture</a></li>
+                        <li><a class="dropdown-item" onclick="fun4_4()">Log</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><div class="dropdown-item" >Chapter 4</div></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        5
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" onclick="fun5_1()">Permutation</a></li>
+                        <li><a class="dropdown-item" onclick="fun5_2()">Combination</a></li>
+                        <li><a class="dropdown-item" onclick="fun5_3()">Probability</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><div class="dropdown-item" >Chapter 5</div></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        6
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" onclick="fun6_1()">Reasoning</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><div class="dropdown-item" >Chapter 6</div></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="pt-5">
+            <div class="pt-5" id="mainBox">
+            </div>
+
+                <form id="boxCalculator">
+                    <hr>
+                    <h2 class="m-1 text-center">Calculator</h2>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Input 1</label>
+                      <input type="number" class="form-control" id="input1" aria-describedby="emailHelp" placeholder="Enter First Value For Calculation">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Input 2</label>
+                      <input type="number" class="form-control" id="input2" placeholder="Enter Second Value For Calculation">
+                    </div>
+
+                    <hr>
+
+                    <div class="d-flex justify-content-around mb-2">
+                        <button type="button" class="btn btn-dark" onclick="Add()">Add</button>
+                        <button type="button" class="btn btn-dark" onclick="Sub()">Sub</button>
+                        <button type="button" class="btn btn-dark" onclick="Mul()">Mul</button>
+                        <button type="button" class="btn btn-dark" onclick="Div()">Div</button>
+                        <button type="button" class="btn btn-dark" onclick="Mod()">Mod</button>
+                    </div>
+
+                    <div class="d-flex justify-content-around">
+                        <button type="button" class="btn btn-dark" onclick="Fact()">Fact of Input 1</button>
+                        <button type="button" class="btn btn-dark" onclick="Log()">Log of Input 1</button>
+                        <button type="button" class="btn btn-dark" onclick="Exp()">Exp</button>
+                    </div>
+                    
+                    <hr>
+                    
+                    <div class="fs-4 text-break" id="result"></div>
+                    
+                    <hr>
+                    
+                    <div class="d-flex justify-content-around my-2" id="afterResult">
+                    </div>
+
+                    <div class="p-2 border">
+                        <h5 class="text-center">History Before Clear All</h5>
+                        <div id="history1">
+                        </div>
+                    </div>
+
+                    <div class="p-2 border my-2">
+                        <h5 class="text-center">History Before Refresh Page</h5>
+                        <div id="history2">
+                        </div>
+                    </div>
+
+                  </form>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    
+    <script src="pea.js"></script>
+    <script src="pea2.js"></script>
+</body>
+
+</html>
