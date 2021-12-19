@@ -1,5 +1,5 @@
 
-let img1_1 = ["pic","pic"];
+let img1_1 = ["100"];
 let img1_2 = [];
 let img1_3 = [];
 
@@ -192,7 +192,7 @@ function fun6_1(){
     img6_1.map((img)=>{
         mainBox.innerHTML += `
         <hr>
-        <img src="6/${img}.JPG" alt="" class="img-fluid">
+        <img src="${img}.JPG" alt="" class="img-fluid">
         `;
     })
     mainBox.innerHTML += `<hr>`;
