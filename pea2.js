@@ -1,5 +1,5 @@
 
-let img1_1 = ["pic","pic"];
+let img1_1 = [];
 let img1_2 = [];
 let img1_3 = [];
 
@@ -184,33 +184,10 @@ function fun5_3(){
 
 
 
-
-let img6_1 = [];
-let img6_2 = [];
-let img6_3 = [];
+let img6_1 = ["1","2","3","4","5","6","7","8"];
 
 function fun6_1(){
     img6_1.map((img)=>{
-        mainBox.innerHTML += `
-        <hr>
-        <img src="${img}.jpg" alt="" class="img-fluid">
-        `;
-    })
-    mainBox.innerHTML += `<hr>`;
-}
-
-function fun6_2(){
-    img6_2.map((img)=>{
-        mainBox.innerHTML += `
-        <hr>
-        <img src="${img}.jpg" alt="" class="img-fluid">
-        `;
-    })
-    mainBox.innerHTML += `<hr>`;
-}
-
-function fun6_3(){
-    img6_3.map((img)=>{
         mainBox.innerHTML += `
         <hr>
         <img src="${img}.jpg" alt="" class="img-fluid">
