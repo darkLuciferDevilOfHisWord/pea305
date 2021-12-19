@@ -1,5 +1,5 @@
 
-let img1_1 = ["100"];
+let img1_1 = ["pic"];
 let img1_2 = [];
 let img1_3 = [];
 
